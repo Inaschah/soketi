@@ -8,7 +8,7 @@ const server = createServer({ port: port });
 
 server.listen(port);
 
-const wss = new WebSocketServer({ port: 8080, clientTracking: true });
+const wss = new WebSocketServer({ port: 3000, clientTracking: true });
 
 wss.on("connection", (ws) => {
     console.log("Client connected");
